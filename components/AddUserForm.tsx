@@ -2,7 +2,7 @@
 
 import { createUser } from "@/Action/UserAPI";
 import { FC, useRef } from "react";
-import Button from "./Button";
+import SubmitButton from "./SubmitButton";
 import { ApiResponse } from "@/types/Utility";
 import { User } from "@prisma/client";
 
@@ -33,7 +33,7 @@ const AddUserForm: FC<AddUserFormProps> = () => {
           required
         />
       </div>
-      <Button />
+      <SubmitButton />
     </form>
   );
 };
